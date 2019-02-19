@@ -3,11 +3,9 @@
     <head>
       <meta charset="UTF-8">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.2.1/cyborg/bootstrap.min.css">
-      <link rel="stylesheet" href="./personalstyle.css">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
       <title>Weather Analysis</title>  
     </head>
 
@@ -21,7 +19,7 @@
             <div class="collapse navbar-collapse" id="navbarmenu">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href = "#" id = "navbarDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+                  <a class="nav-link dropdown-toggle" href = "#" id = "navbarDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Plots</a>
                   <div class="dropdown-menu" arialabelledby = "navbarDropdown" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 37px, 0px); top: 0px; left: 0px; will-change: transform;">
                     <a class="dropdown-item" href="temp.html"><i class="fas fa-angle-double-right"></i> Max Temp</a>
                     <a class="dropdown-item" href="humidity.html"><i class="fas fa-angle-double-right"></i> Humidity</a>
@@ -45,6 +43,8 @@
             <div class = "col-md-8">
               <div class = "jumbotron">
                 <h1 class="display-7" style="font-family:Georgia, 'Times New Roman', Times, serif">Summary: Latitude vs. X</h1>
+                <hr style = "border-color:white">
+                <hr style = "border-color:turquoise">
                 <img style="padding: 0 15px; float: left;" src = "Resources/assets/images/temp.png" alt="MaxTemp" height = 250>
               <p>The purpose of this project was to compare the weather at different latitudes in order to understand
                   how they change as we get closer to or farther away from the equator. We then draw conclusions about the behavior
@@ -58,18 +58,17 @@
               </div>
             </div>
 
-            <div class = "col-md-4">
+            <div class = "col-md-4 col-sm-12">
               <div class = "jumbotron">
                 <h1 style="font-family:Georgia, 'Times New Roman', Times, serif">Visualizations </h1>
-                <hr>
-                <div class = "row" style = "width:110%; padding-bottom: 10px">
-                  <div class = "col"><a href="temp.html"><img class = "img-responsive" src ="Resources/assets/images/temp.png" style = "width:100%;" alt = "Latitude vs. Temperature"></a></div>
-                  <div class = "col"><a href="humidity.html"><img class = "img-responsive" src ="Resources/assets/images/humidity.png" style = "width:100%;" alt = "Latitude vs. Humidity"></a></div>
-              </div>
-              <div class = "row" style = "width:110%; padding-bottom: 10px">
-                <div class = "col"><a href="clouds.html"><img class = "img-responsive" src ="Resources/assets/images/clouds.png" style = "width:100%;" alt = "Latitude vs. Cloudiness"></a></div>
-                <div class = "col"><a href="wind.html"><img class = "img-responsive" src ="Resources/assets/images/wind.png" style = "width:100%;" alt = "Latitude vs. Wind Speed"></a></div>
-            </div>                         
+                <hr style = "border-color:white">
+                <hr style = "border-color:turquoise">
+                <div class = "row" style = "width:100%; padding-bottom: 10px">
+                  <div class = "col-md-6 col-sm-3" style="padding-bottom:10px"><a href="temp.html"><img class = "img-responsive" src ="Resources/assets/images/temp.png" style = "width:100%;" alt = "Latitude vs. Temperature"></a></div>
+                  <div class = "col-md-6 col-sm-3" style="padding-bottom:10px"><a href="humidity.html"><img class = "img-responsive" src ="Resources/assets/images/humidity.png" style = "width:100%;" alt = "Latitude vs. Humidity"></a></div>
+                  <div class = "col-md-6 col-sm-3" style="padding-bottom:10px"><a href="clouds.html"><img class = "img-responsive" src ="Resources/assets/images/clouds.png" style = "width:100%;" alt = "Latitude vs. Cloudiness"></a></div>
+                  <div class = "col-md-6 col-sm-3" style="padding-bottom:10px"><a href="wind.html"><img class = "img-responsive" src ="Resources/assets/images/wind.png" style = "width:100%;" alt = "Latitude vs. Wind Speed"></a></div>
+                </div>                         
             </div>
           </div>
         <script src=“https://code.jquery.com/jquery-3.3.1.slim.min.js” integrity=“sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo” crossorigin=“anonymous”></script>
